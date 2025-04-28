@@ -55,7 +55,7 @@ function NavLinks() {
   };
 
   return (
-    <ul className="flex gap-8">
+    <ul className="flex gap-8 text-[#686868]">
       {links.map((link) => (
         <li key={link.id} className="relative list-none ">
           {/* Agar dropdown bo'lsa */}
@@ -82,17 +82,13 @@ function NavLinks() {
 
           {/* Dropdown ochilsa */}
           {link.dropdown && openDropdownId === link.id && (
-            <ul className="absolute top-full left-0 mt-2 w-72 bg-white  shadow-md rounded-md py-2 z-10  ">
+            <ul className="absolute top-full left-0 mt-2 w-72 bg-white  shadow-md rounded-md py-2 z-10 px-2 border  ">
               {link.dropdown.map((item) => (
                 <li key={item.id}>
                   <NavLink
                     to={item.link}
                     className={({ isActive }) =>
-                      `block px-4 py-2 capitalize hover:text-[#009688] transition duration-300 ${
-                        isActive
-                          ? "border-b-2 border-blue-500 font-semibold"
-                          : ""
-                      }`
+                      `block px-4 py-2 capitalize hover:text-[#009688] transition duration-300 border-b-2 `
                     }
                     onClick={() => setOpenDropdownId(null)}
                   >

@@ -6,11 +6,14 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 // react-router-dom
 import { Link } from "react-router-dom";
+// img
+import Logo from "../assets/header/Logo.svg";
+import Flag from "../assets/header/flag.svg";
 
 function Navbar() {
   const [arrow, setArrow] = useState(true);
-  function setOpenArrow () {
-    setArrow((prev) => !prev)
+  function setOpenArrow() {
+    setArrow((prev) => !prev);
   }
 
   return (
@@ -18,7 +21,7 @@ function Navbar() {
       {/* logo */}
       <div>
         <Link to="/">
-          <img src="../public/assets/header/Logo.svg" alt="site logosi" />
+          <img src={Logo} alt="site logosi" className="w-[239px]" />
         </Link>
       </div>
       {/* nav */}
@@ -30,7 +33,7 @@ function Navbar() {
       {/* til va  login */}
       <div className="flex  gap-[34px] items-center">
         <div
-          className="dropdown dropdown-bottom border-r pr-[34px]"
+          className="dropdown dropdown-bottom border-r border-[#76767699] pr-[34px]"
           onClick={setOpenArrow}
         >
           <div
@@ -38,12 +41,12 @@ function Navbar() {
             role="button"
             className=" p-1 m-1 flex items-center gap-2 "
           >
-            <img src="../public/assets/header/flag.svg" alt="site logosi" />
+            <img src={Flag} alt="site logosi" className="w-[29px]" />
             ENG
             {arrow ? (
-              <MdKeyboardArrowDown className=" rotate-180 transition-transform duration-300" />
-            ) : (
               <MdKeyboardArrowDown className="  transition-transform duration-300" />
+            ) : (
+              <MdKeyboardArrowDown className=" rotate-180 transition-transform duration-300" />
             )}
           </div>
           <ul
@@ -58,7 +61,9 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <button className="btn py-[9px] px-[31px] bg-[#009688]">Sign in</button>
+        <button className="btn py-[9px] px-[31px] bg-[#009688] text-white hover:bg-[#33b0a4]">
+          Sign in
+        </button>
       </div>
     </div>
   );

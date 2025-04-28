@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-  @layer components {
+@layer components {
   .con-align {
     @apply max-w-[1300px] w-full px-5 mx-auto;
   }

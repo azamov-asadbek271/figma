@@ -7,8 +7,8 @@ import { useState } from "react";
 // react-router-dom
 import { Link } from "react-router-dom";
 // img
-import Logo from "../assets/header/Logo.svg";
-import Flag from "../assets/header/flag.svg";
+import Logo from "/assets/header/Logo.svg";
+import Flag from "/assets/header/flag.svg";
 
 function Navbar() {
   const [arrow, setArrow] = useState(true);

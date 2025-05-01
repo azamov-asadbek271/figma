@@ -5,6 +5,16 @@ export default {
     extend: {
       fontFamily: {
         openSans: ["Open Sans", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
+      animation: {
+        "scroll-right": "scroll-right 20s linear infinite",
+      },
+      keyframes: {
+        "scroll-right": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
     },
   },

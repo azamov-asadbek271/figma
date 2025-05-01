@@ -8,7 +8,7 @@ function ClinetsSection() {
   const logos = [american, klarna, skrill, stripte, westrnunion];
    const logosTwo = [westrnunion, skrill, american, klarna, stripte];
   
-  return ( 
+  return (
     <div className="py-[70px]">
       <h2 className="text-[#000] text-[40px] font-bold mb-[60px] text-center ">
         Our Partners and Clients
@@ -18,7 +18,7 @@ function ClinetsSection() {
         <div
           className="flex w-max gap-[21px] animate-scroll-right"
           style={{
-            animation: "scroll-right 20s linear infinite",
+            animation: "scroll-right 25s linear infinite",
           }}
         >
           {[...logos, ...logos].map((logo, index) => (
@@ -32,9 +32,9 @@ function ClinetsSection() {
         </div>
       </div>
 
-      <div className="overflow-hidden w-full bg-white py-6">
+      <div className="overflow-hidden w-full bg-white py-6 ">
         <div
-          className="flex w-max gap-[21px] animate-scroll-left"
+          className="flex w-max gap-[21px] animate-scroll-left "
           style={{
             animation: "scroll-left 20s linear infinite",
           }}

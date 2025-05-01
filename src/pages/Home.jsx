@@ -1,4 +1,10 @@
-import { OurServieSection,HeroSection,OurExpextTeam,ClinetsSection } from "../components"
+import {
+  OurServieSection,
+  HeroSection,
+  OurExpextTeam,
+  ClinetsSection,
+  ImageSlider,
+} from "../components";
 
 function Home() {
   return (
@@ -7,6 +13,7 @@ function Home() {
       <OurServieSection/>
       <OurExpextTeam/>
       <ClinetsSection/>
+      <ImageSlider/>
     </div>
   )
 }

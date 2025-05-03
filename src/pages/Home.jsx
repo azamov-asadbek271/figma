@@ -3,7 +3,7 @@ import {
   HeroSection,
   OurExpextTeam,
   ClinetsSection,
-  ImageSlider,
+ VideoSlider,
 } from "../components";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
       <OurServieSection/>
       <OurExpextTeam/>
       <ClinetsSection/>
-      <ImageSlider/>
+      <VideoSlider/>
     </div>
   )
 }

@@ -55,7 +55,7 @@ function NavLinks() {
   };
 
   return (
-    <ul className="flex gap-8 text-[#686868]">
+    <ul className="flex gap-8 text-[#686868] font-openSans font-semibold">
       {links.map((link) => (
         <li key={link.id} className="relative list-none ">
           {/* Agar dropdown bo'lsa */}

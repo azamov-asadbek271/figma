@@ -27,7 +27,7 @@ function Navbar() {
   }
 
   return (
-    <div className="con-align py-[22px] flex justify-between items-center font-openSans text-[15px]">
+    <div className="con-align py-[22px] flex justify-between items-center font-openSans text-[15px] font-semibold">
       {/* Logo */}
       <div>
         <Link to="/">
@@ -64,7 +64,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="dropdown-content menu bg-base-100 rounded-box z-[1] w-40 p-2 shadow"
+            className="dropdown-content menu bg-base-100 rounded-box z-[1] w-40 p-2 shadow "
           >
             <li onClick={() => handleLanguageSelect("ENG")}>
               <div className="flex justify-between items-center gap-2 cursor-pointer">
@@ -81,7 +81,7 @@ function Navbar() {
           </ul>
         </div>
         {/* Login Button */}
-        <button className="btn py-[9px] px-[31px] bg-[#009688] text-white hover:bg-[#33b0a4]">
+        <button className="btn py-[9px] px-[31px] bg-[#009688] text-white hover:bg-[#33b0a4] ">
           Sign in
         </button>
       </div>

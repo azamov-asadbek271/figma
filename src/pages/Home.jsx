@@ -3,19 +3,21 @@ import {
   HeroSection,
   OurExpextTeam,
   ClinetsSection,
- VideoSlider,
+  VideoSlider,
+  StudentsSection,
 } from "../components";
 
 function Home() {
   return (
     <div>
-      <HeroSection/>
-      <OurServieSection/>
-      <OurExpextTeam/>
-      <ClinetsSection/>
-      <VideoSlider/>
+      <HeroSection />
+      <OurServieSection />
+      <OurExpextTeam />
+      <ClinetsSection />
+      <VideoSlider />
+      <StudentsSection />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

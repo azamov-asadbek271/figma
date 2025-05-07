@@ -5,6 +5,8 @@ import {
   ClinetsSection,
   VideoSlider,
   StudentsSection,
+  FrequentlySection,
+  ConsultationSection,
 } from "../components";
 
 function Home() {
@@ -16,6 +18,8 @@ function Home() {
       <ClinetsSection />
       <VideoSlider />
       <StudentsSection />
+      <FrequentlySection/>
+      <ConsultationSection/>
     </div>
   );
 }

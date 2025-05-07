@@ -81,7 +81,7 @@ function Navbar() {
           </ul>
         </div>
         {/* Login Button */}
-        <button className="btn py-[9px] px-[31px] bg-[#009688] text-white hover:bg-[#33b0a4] ">
+        <button className="btn py-[9px] px-[31px] bg-[#009688] text-white hover:bg-[#33b0a4] rounded-[8px] ">
           Sign in
         </button>
       </div>

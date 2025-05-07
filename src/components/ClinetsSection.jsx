@@ -9,12 +9,12 @@ function ClinetsSection() {
    const logosTwo = [westrnunion, skrill, american, klarna, stripte];
   
   return (
-    <div className="py-[70px]">
+    <div className="py-[70px] border  ">
       <h2 className="text-[#000] text-[40px] font-bold mb-[60px] text-center ">
         Our Partners and Clients
       </h2>
 
-      <div className="overflow-hidden w-full bg-white py-6">
+      <div className="overflow-hidden w-full bg-white py-6  ">
         <div
           className="flex w-max gap-[21px] animate-scroll-right"
           style={{

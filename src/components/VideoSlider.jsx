@@ -31,7 +31,7 @@ function VideoSlider() {
   };
 
   return (
-    <div className="py-[70px] flex flex-col items-center font-openSans con-align">
+    <div className="py-[70px] flex flex-col items-center font-openSans con-align e">
       <h2 className="text-[#000] text-[40px] font-bold mb-[10px] text-center">
         Our Media
       </h2>

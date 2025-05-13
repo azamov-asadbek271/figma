@@ -63,12 +63,15 @@ function Login() {
               register={register}
               name="phone_number"
             />
-            <button type="submit" className="w-full bg-[#009688] text-[#FFFFFF] font-semibold p-[18px] text-[20px] rounded-[8px]">
+            <button
+              type="submit"
+              className="w-full bg-[#009688] text-[#FFFFFF] font-semibold p-[18px] text-[20px] rounded-[8px]"
+            >
               Sigin in
             </button>
             <Link
               to="/register"
-              className="text-[#8F8F8F] text-[26px] text-center"
+              className="text-[#8F8F8F] text-[26px] text-center hover:text-[#009688] transition duration-300"
             >
               Create a new account !
             </Link>

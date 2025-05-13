@@ -5,7 +5,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 // react
 import { useState } from "react";
 // react-router-dom
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
 // images
 import Logo from "/assets/header/Logo.svg";
 import engFlag from "/assets/header/flag.svg";
@@ -81,9 +81,9 @@ function Navbar() {
           </ul>
         </div>
         {/* Login Button */}
-        <button className="btn py-[9px] px-[31px] bg-[#009688] text-white hover:bg-[#33b0a4] rounded-[8px] ">
+        <Link to="/register" className="btn py-[9px] px-[31px] bg-[#009688] text-white hover:bg-[#33b0a4] rounded-[8px] ">
           Sign in
-        </button>
+        </Link>
       </div>
     </div>
   );

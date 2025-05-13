@@ -1,8 +1,12 @@
 // react-router-dom
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
+// mainlayout
 import MainLayouts from "./layouts/MainLayouts";
-import { Contact, FinanceTools, Home, Programs } from "./pages";
-
+// pages
+import { Contact, FinanceTools, Home, Programs, Register,Login } from "./pages";
+// toast
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   const routes = createBrowserRouter([
     {
@@ -27,8 +31,27 @@ function App() {
         },
       ],
     },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
   ]);
-  return <RouterProvider router={routes} />;
+  return (
+    <>
+      <RouterProvider router={routes} />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        pauseOnHover
+        theme="light"
+      />
+    </>
+  );
 }
 
 export default App;

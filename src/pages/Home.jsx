@@ -8,7 +8,6 @@ import {
   FrequentlySection,
   ConsultationSection,
 } from "../components";
-
 function Home() {
   return (
     <div>
@@ -18,8 +17,8 @@ function Home() {
       <ClinetsSection />
       <VideoSlider />
       <StudentsSection />
-      <FrequentlySection/>
-      <ConsultationSection/>
+      <FrequentlySection />
+      <ConsultationSection />
     </div>
   );
 }
